@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginEnd="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    app:cardCornerRadius="16dp">
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/text_view_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/text_view_date"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/text_view_agenda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_title"
+            android:layout_toStartOf="@id/text_view_week"
+            android:text="Agenda of the meeting"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:lines="2"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/text_view_start_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_agenda"
+            android:text="Start Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:lines="1"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/separator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_agenda"
+            android:layout_toRightOf="@+id/text_view_start_datetime"
+            android:text=" - "
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/text_view_end_datetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_agenda"
+            android:layout_toRightOf="@+id/separator"
+            android:text="End Time"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:lines="1"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/text_view_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:maxLines="1"
+            android:layout_alignParentEnd="true"
+            android:ellipsize="end"/>
+
+        <TextView
+            android:id="@+id/text_view_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:maxLines="1"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/text_view_date"
+            android:ellipsize="end"/>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
